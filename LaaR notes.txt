@@ -1,0 +1,27 @@
+Drop off the epsilon greedy thing (improvement)
+
+Delete the "no movement" to prevent  the network from  choosing and stucking into a place (didn't work)
+
+loss to go? (didn't work, or kinda? still to slow)	
+
+try different batch sizes
+
+Try different learning rates
+
+try when the network repeats movement to select another one like the second best (tried something similar, didn't work)
+
+"Currently, you concatenate only the immediate previous action. Consider concatenating multiple previous actions as input features to help the model track its own history." (didn't  work)
+
+Prohibit selecting the last action explicitly. (worked!) but not always? (dont seem much reliable) coming back to before.
+
+Dont give reward for the network when it repeats a movement, or only give the reward for the first movement?
+
+Try different heads and layers (Added 4 layers, didn't work)
+
+Feed less to the network the easy images and more the difficult ones ( i believe worked) now 76% with 6 epochs 10 moves
+
+analize the images at the beginning 3 times to reduce noise. (tried something like this, works, but is too slow, I'll try just increasing the batch size) 
+
+Maybe I shouldn't give any reward for when the prediction is incorrect?
+
+Should we start the window in a random position?
