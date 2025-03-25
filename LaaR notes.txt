@@ -25,3 +25,5 @@ analize the images at the beginning 3 times to reduce noise. (tried something li
 Maybe I shouldn't give any reward for when the prediction is incorrect?
 
 Should we start the window in a random position?
+
+during the epoch 0, I believe we are performing only 1 movement, so should we perform the 10 movements?	
